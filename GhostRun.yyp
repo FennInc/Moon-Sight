@@ -63,6 +63,8 @@
     {"id":{"name":"spr_restart","path":"sprites/spr_restart/spr_restart.yy",},},
     {"id":{"name":"spr_sky","path":"sprites/spr_sky/spr_sky.yy",},},
     {"id":{"name":"spr_tombstone","path":"sprites/spr_tombstone/spr_tombstone.yy",},},
+    {"id":{"name":"spr_willow_down","path":"sprites/spr_willow_down/spr_willow_down.yy",},},
+    {"id":{"name":"spr_willow_hurt","path":"sprites/spr_willow_hurt/spr_willow_hurt.yy",},},
     {"id":{"name":"spr_willow_walk","path":"sprites/spr_willow_walk/spr_willow_walk.yy",},},
     {"id":{"name":"spr_zombie","path":"sprites/spr_zombie/spr_zombie.yy",},},
   ],

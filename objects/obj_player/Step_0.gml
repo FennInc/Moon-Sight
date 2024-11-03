@@ -1,6 +1,6 @@
 //changing sprite and stopping at game over
 if (global.gameover == true) {
-	sprite_index = spr_player_damage;
+	sprite_index = spr_willow_hurt;
 	exit;
 }
 
@@ -19,8 +19,6 @@ if(y >= 512) {
 		grav = 1;
 	}
 	vel_y += grav;
-	
-	image_speed = 0;
 }
 
 //mudando o y
@@ -29,7 +27,7 @@ y += vel_y;
 //going down
 
 if (keyboard_check(vk_down)) {
-	sprite_index = spr_player_down
+	sprite_index = spr_willow_down
 } else {
  sprite_index = spr_willow_walk
 }

@@ -37,6 +37,8 @@
     {"name":"spr_player_walk","order":2,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
     {"name":"spr_restart","order":3,"path":"sprites/spr_restart/spr_restart.yy",},
     {"name":"spr_sky","order":2,"path":"sprites/spr_sky/spr_sky.yy",},
+    {"name":"spr_willow_down","order":1,"path":"sprites/spr_willow_down/spr_willow_down.yy",},
+    {"name":"spr_willow_hurt","order":2,"path":"sprites/spr_willow_hurt/spr_willow_hurt.yy",},
     {"name":"spr_zombie","order":1,"path":"sprites/spr_zombie/spr_zombie.yy",},
   ],
 }

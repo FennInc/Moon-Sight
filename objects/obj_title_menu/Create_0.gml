@@ -19,7 +19,8 @@ option[1, 0] = "return";
 op_length = 0;
 menu_level = 0;
 
-controls_string[0] = "UP Key - Jump"
+controls_string[0] = "Up Key - Hold to Jump"
 controls_string[1] = "Down Key - Crounch"
-controls_string[2] = "Enter - Confirm"
-controls_string[3] = "IF YOU TOUCH SOMETHING YOU DIE"
+controls_string[2] = "Left and Right Keys - Move sideways"
+controls_string[3] = "Enter - Confirm"
+controls_string[4] = "IF YOU TOUCH SOMETHING YOU DIE"

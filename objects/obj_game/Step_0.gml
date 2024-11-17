@@ -4,8 +4,8 @@ if (global.gameover == true) {
 
 //adding points
 global.points += 0.1;
-if(global.points/100 >= global.speedmodifier){
-	global.speedmodifier += 1;
+if(global.points/50 >= global.speedmodifier){
+	global.speedmodifier += 0.5;
 }
 
 //ground speed

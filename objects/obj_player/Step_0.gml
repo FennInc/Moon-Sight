@@ -28,12 +28,14 @@ if(jump_timer > 0) {
 	jump_timer --;
 }
 
+
+
 //going down
 if (keyboard_check(vk_down)) {
-	jump_frames = 7
+	jump_frames = 7;
 	grav = 2.5;
 } else {
-	jump_frames = 15
+	jump_frames = 15;
 	grav = 1;
 }
 	
@@ -42,10 +44,14 @@ vel_y += grav;
 y += vel_y;
 
 //going down sprite
-if (keyboard_check(vk_down)) {
-	sprite_index = spr_willow_down
-} else {
- sprite_index = spr_willow_walk
+if (keyboard_check(vk_down) && jump_max <= 1) {
+	sprite_index = spr_willow_down;
+} else if(keyboard_check(vk_down)&& jump_max > 1) {
+	sprite_index = spr_willow_super_down;
+}else if jump_max <= 1 {
+ sprite_index = spr_willow_walk;
+} else if jump_max > 1 {
+	sprite_index = spr_willow_super_walk;
 }
 
 //left and right movement

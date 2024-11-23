@@ -5,9 +5,9 @@ if (global.gameover == true) {
 }
 
 //making run
-x -=  velh;
+y +=  vely;
 
 //destroy offscreen
-if (x <= -64) {
+if (y >= 634) {
 	instance_destroy();
 }

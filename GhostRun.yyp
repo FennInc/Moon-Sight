@@ -74,6 +74,8 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_willow_down","path":"sprites/spr_willow_down/spr_willow_down.yy",},},
     {"id":{"name":"spr_willow_hurt","path":"sprites/spr_willow_hurt/spr_willow_hurt.yy",},},
+    {"id":{"name":"spr_willow_super_down","path":"sprites/spr_willow_super_down/spr_willow_super_down.yy",},},
+    {"id":{"name":"spr_willow_super_walk","path":"sprites/spr_willow_super_walk/spr_willow_super_walk.yy",},},
     {"id":{"name":"spr_willow_walk","path":"sprites/spr_willow_walk/spr_willow_walk.yy",},},
     {"id":{"name":"spr_zombie","path":"sprites/spr_zombie/spr_zombie.yy",},},
   ],

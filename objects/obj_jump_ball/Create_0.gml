@@ -1,2 +1,2 @@
 //defining velocity
-velh = 10 + global.speedmodifier;
+vely = 6 + global.speedmodifier/2;

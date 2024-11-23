@@ -3,4 +3,4 @@ alarm[0] = 60;
 alarm[1] = -1;
 alarm[2] = -1
 
-reset_jump = 0;
+reset_jump = 1;

@@ -1,6 +1,8 @@
 if (global.gameover == true) {
+	audio_stop_sound(snd_jumpball);
 	exit;	
 }
+
 
 //adding points
 global.points += 0.1;
@@ -23,5 +25,7 @@ if (global.points >= 200 && obj_player.jump_max <= 1) {
 }
 
 if (reset_jump <= 0) {
+	audio_play_sound(snd_unpowerup,0,false);
 	obj_player.jump_max = 1;
+	reset_jump = 1;
 }

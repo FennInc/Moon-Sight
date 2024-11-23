@@ -3,8 +3,12 @@ if (global.gameover == true) {
 	sprite_index = spr_willow_hurt;
 	exit;
 }
-jump_key = keyboard_check_pressed(vk_up);
-jump_hold = keyboard_check(vk_up);
+jump_key = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W"));
+jump_hold = keyboard_check(vk_up) || keyboard_check(vk_space) || keyboard_check(ord("W"));
+down_key = keyboard_check(vk_down) || keyboard_check(ord("S"));
+right_key = keyboard_check(vk_right) || keyboard_check(ord("D"));
+left_key = keyboard_check(vk_left) || keyboard_check(ord("A"));
+
 
 //checking if it's on ground
 if(y >= 512) {
@@ -16,6 +20,7 @@ if(y >= 512) {
 
 //initializde jump
 if (jump_key && jump_count < jump_max) {
+	audio_play_sound(snd_jump,0,false);
 	jump_count++;
 	jump_timer = jump_frames;
 }
@@ -31,7 +36,11 @@ if(jump_timer > 0) {
 
 
 //going down
-if (keyboard_check(vk_down)) {
+if keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S")) {
+	audio_play_sound(snd_crouch,0,false);
+}
+
+if (down_key) {
 	jump_frames = 7;
 	grav = 2.5;
 } else {
@@ -44,9 +53,9 @@ vel_y += grav;
 y += vel_y;
 
 //going down sprite
-if (keyboard_check(vk_down) && jump_max <= 1) {
+if (down_key && jump_max <= 1) {
 	sprite_index = spr_willow_down;
-} else if(keyboard_check(vk_down)&& jump_max > 1) {
+} else if(down_key && jump_max > 1) {
 	sprite_index = spr_willow_super_down;
 }else if jump_max <= 1 {
  sprite_index = spr_willow_walk;
@@ -55,7 +64,7 @@ if (keyboard_check(vk_down) && jump_max <= 1) {
 }
 
 //left and right movement
-vel_x = (keyboard_check(vk_right) - keyboard_check(vk_left))*speed_x;
+vel_x = (right_key - left_key)*speed_x;
 
 //invisible wall collision
 if(place_meeting(x + vel_x, y, obj_wall)) {

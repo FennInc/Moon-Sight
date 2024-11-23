@@ -9,6 +9,10 @@ op_length = array_length(option[menu_level])
 
 //move through the menu
 pos += down_key - up_key;
+
+if down_key || up_key {
+	audio_play_sound(snd_menu_selection,0,false);
+}
 if (pos >= op_length) {
 	pos = 0;
 } else if (pos < 0) {
@@ -18,6 +22,7 @@ if (pos >= op_length) {
 //using the options
 
 if (enter_key) {
+	audio_play_sound(snd_menu_selection,0,false);
 	// something menu level to store the current menu
 	var _sml = menu_level;
 	
